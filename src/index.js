@@ -5,14 +5,14 @@ import {render} from 'react-dom'
 import {AppContainer} from 'react-hot-loader'
 import App from './app'
 
-const renderApp = (NextApp) => {
+const renderApp = (NextApp) => (
     render(
         <AppContainer>
             <NextApp />
         </AppContainer>,
         document.querySelector('[data-js="app"]')
     )
-}
+)
 
 renderApp(App)
 
